@@ -1,0 +1,12 @@
+def fact(n1):
+    if n1==1:
+        return n1
+    else:
+        return n1*fact(n1-1)
+num=int(input("give the number\n"))
+if num<0:
+    print("factorial doesn't exist")
+elif num==0:
+    print("factorial is 1")
+else:
+    print("factorial is ",fact(num))
